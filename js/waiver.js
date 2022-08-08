@@ -32,6 +32,7 @@ first.addEventListener("mouseout", (event) => {
 }, false);
 
 var fst= first.getElementsByTagName('figcaption')[0];
+fst.tabIndex = "1";
 fst.addEventListener("focus", (event) => {
     event.target.style.fontFamily = "Cursive";
     
