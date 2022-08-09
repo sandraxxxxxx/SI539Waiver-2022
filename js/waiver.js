@@ -33,12 +33,12 @@ first.addEventListener("mouseout", (event) => {
 
 var fst= first.getElementsByTagName('figcaption')[0];
 fst.tabIndex = "0";
-fst.addEventListener("focus", (event) => {
+fst.addEventListener("focusin", (event) => {
     event.target.style.fontFamily = "Cursive";
     
 }, false);
 
-fst.addEventListener("blur", (event) => {
+fst.addEventListener("focusout", (event) => {
     event.target.style.fontFamily = "Times";
     
 }, false);

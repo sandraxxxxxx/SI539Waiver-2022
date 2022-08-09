@@ -1,6 +1,6 @@
 
 .container {
-    width: 70%;
+    width: min(70%, 375px);
     display: grid;
     justify-content: center;
     justify-items: center;
@@ -31,11 +31,7 @@ figure img {
     }
 }
 
-@media (min-width: 536px) {
-    .container { 
-        width: 375px;
-    }
-  }
+
 
 @media (min-width: 650px) {
 
